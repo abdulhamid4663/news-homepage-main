@@ -1,0 +1,40 @@
+// FOOTER SECTION 
+
+.footer {
+    margin: 3.75rem 0 5rem;
+    &__item {
+        width: 100%;
+        &:not(:last-of-type) {
+            margin-bottom: 2.125rem;
+        }
+        @include breakpoint-up(large) {
+            width: 33.33%;
+        }
+        a {
+            gap: 22px;
+        }
+        &-image {
+            width: 33%;
+            @include breakpoint-up(large) {
+                
+            }
+        }
+        &-text {
+            width: 60%;
+            padding: 5px 0 10px;
+            h3 {
+                color: $grayishBlue;
+                font-size: 2rem;
+                width: 100%;
+            }
+            h2 {
+                font-size: $smallFont;
+                color: $veryDarkBlue;
+            }
+            p {
+                font-size: $smallFont;
+                color: $darkGrayishBlue;
+            }
+        }
+    }
+}

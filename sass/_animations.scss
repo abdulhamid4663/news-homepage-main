@@ -1,0 +1,71 @@
+// ANIMATIONS 
+
+@keyframes fade-in {
+    from {
+        visibility: hidden;
+        opacity: 0;
+    }
+    1% {
+        visibility: visible;
+        opacity: 0;
+    }
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fade-in 200ms ease-in-out forwards;
+}
+
+@keyframes fade-out {
+    from {
+        visibility: visible;
+        opacity: 1;
+    }
+    99% {
+        visibility: visible;
+        opacity: 0;
+    }
+    to {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.fade-out {
+    animation: fade-out 200ms ease-in-out forwards;
+}
+
+@keyframes appear {
+    from {
+        width: 0;
+    }
+    1% {
+        width: 0;
+    }
+    50% {
+        width: 30%;
+    }
+    to {
+        width: 65%;
+    }
+}
+
+.appear {
+    animation: appear 200ms ease-in-out forwards;
+}
+
+@keyframes disappear {
+    from {
+        width: 65%;
+    }
+    to {
+        width: 0;
+    }
+}
+
+.disappear {
+    animation: disappear 250ms ease-in-out forwards;
+}

@@ -1,0 +1,93 @@
+// MAIN SECTION 
+
+
+main {
+    margin: 1.875rem 0;
+    .grid {
+        grid-template-areas:
+            "hero-image"
+            "hero-future"
+            "hero-text"
+            "sidebar"
+                
+                ;
+        @include breakpoint-up(medium) {
+            grid-template-areas:
+            "hero-image hero-image hero-image sidebar"
+            ;
+            
+        }
+        // HERO SECTION STARTS
+        &__hero {
+            margin-bottom: 4rem;
+            &-images {
+                grid-area: hero-image;
+            }
+            &-future {
+                grid-area: hero-future;
+                padding-top: 1.875rem;
+                h1 {
+                    font-size: 2.75rem;
+                    color: $veryDarkBlue;
+                }
+            }
+            &-text {
+                padding-top: 1.25rem;
+                grid-area: hero-text;
+                p {
+                    font-size: $smallFont;
+                    color: $darkGrayishBlue;
+                    padding-bottom: 1.25rem;
+                    line-height: 1.6;
+                    
+                }
+                &-btn {
+                    a {
+                        font-size: 0.8rem;
+                        background-color: $softRed;
+                        padding: 0.75rem 2.5rem;
+                        display: inline-block;
+                        color:  $offWhite;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        letter-spacing: 3px;
+                    }
+                }
+            }
+        }
+        // HERO SECTION ENDS
+
+        // SIDEBAR SECTION STARTS
+        &__sidebar {
+            grid-area: sidebar;
+            padding: 1.75rem 1.4375rem;
+            background-color: $veryDarkBlue;
+            &-title {
+                margin-bottom: 2rem;
+                h1 {
+                    color: $softOrange;
+                    font-size: 1.625rem;
+                }
+            }
+            &-item {
+                color: $offWhite;
+                a {
+                    font-size: 1.25rem;
+                    color: $offWhite;
+                    font-weight: 700;
+                }
+                p {
+                    margin: 1rem 0 1.25rem;
+                    line-height: 1.6;
+                    font-size: $smallFont; 
+                }
+                hr {
+                    margin-bottom: 1.875rem;
+                }
+            }
+        }
+        // SIDEBAR SECTION ENDS
+
+    }
+
+}

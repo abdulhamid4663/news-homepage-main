@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <!-- LOCAL STYLES -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <!-- HEADER SECTION STARTS -->
+  <header class="header">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="header__logo">
+          <a href="#">
+            <img src="images/logo.svg" alt="Logo">
+          </a>
+        </div>
+        <a href="#" id="btnHamburger" class="hamburger hide-for-desktop" >
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <nav>
+          <ul class="nav row">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">New</a>
+            </li>
+            <li>
+              <a href="#">Popular</a>
+            </li>
+            <li>
+              <a href="#">Trending</a>
+            </li>
+            <li>
+              <a href="#">Categories</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- HEADER SECTION ENDS -->
+
+  <!-- MAIN SECTION STARTS -->
+  <main>
+    <div class="container">
+      <div class="grid">
+        <!-- HERO SECTION STARTS -->
+        <section class="grid__hero" id="hero">
+          <div class="grid__hero-images">
+            <img src="images/image-web-3-mobile.jpg" alt="" class="hide-for-desktop">
+            <img src="images/image-web-3-desktop.jpg" alt="" class="hide-for-mobile">
+          </div>
+          <div class="grid__hero-future">
+            <h1>The Bright Future of Web 3.0?</h1>
+          </div>
+          <div class="grid__hero-text">
+            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+              But is it really fulfilling its promise?</p>
+            <div class="grid__hero-text-btn">
+              <a href="#" type="button">Read more</a>
+            </div>
+          </div>
+        </section>
+        <!-- HERO SECTION ENDS -->
+
+        <!-- SIDEBAR SECTION STARTS -->
+        <section class="grid__sidebar" id="sidebar">
+          <div class="grid__sidebar-title">
+            <h1>New</h1>
+          </div>
+          <div class="grid__sidebar-item">
+            <a href="#">Hydrogen VS Electric Cars</a>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            <hr>
+          </div>
+          <div class="grid__sidebar-item">
+            <a href="#">The Downsides of AI Artistry</a>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+            <hr>
+          </div>
+          <div class="grid__sidebar-item">
+            <a href="#">Is VC Funding Drying Up?</a>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </div>
+        </section>
+        <!-- SIDEBAR SECTION ENDS -->
+      </div>  
+    </div>
+  </main>
+  <!-- MAIN SECTION ENDS -->
+
+  <!-- FOOTER SECTION STARTS -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="footer__item">
+          <a href="#" class="row">
+            <div class="footer__item-image">
+              <img src="images/image-retro-pcs.jpg" alt="">
+            </div>
+            <div class="footer__item-text row align-content-between">
+              <h3>01</h3>
+              <h2>Reviving Retro PCs</h2>
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </a>
+        </div>
+        <div class="footer__item">
+          <a href="#" class="row">
+            <div class="footer__item-image">
+              <img src="images/image-top-laptops.jpg" alt="">
+            </div>
+            <div class="footer__item-text row align-content-between">
+              <h3>02</h3>
+              <h2>Top 10 Laptops of 2022</h2>
+              <p>Our best picks for various needs and budgets.</p>
+            </div>
+          </a>
+        </div>
+        <div class="footer__item">
+          <a href="#" class="row">
+            <div class="footer__item-image">
+              <img src="images/image-gaming-growth.jpg" alt="">
+            </div>
+            <div class="footer__item-text row align-content-between">
+              <h3>03</h3>
+              <h2>The Growth of Gaming</h2>
+              <p>How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER SECTION ENDS -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
